@@ -130,6 +130,9 @@ async def next_page(bot, query):
                 for file in files
               ]
     btn.insert(0,[
+        InlineKeyboardButton("‼️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ Mᴏᴠɪᴇ ‼️", url=f'https://t.me/how_to_download_watch_88')
+        ])
+    btn.insert(0,[
         InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ", callback_data=batch_link),
         InlineKeyboardButton("🥇ʙᴜʏ🥇", url=f"https://t.me/{temp.U_NAME}?start=buy_premium"),
         InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}#{offset}#{req}")
@@ -233,7 +236,10 @@ async def lang_search(client: Client, query: CallbackQuery):
                 InlineKeyboardButton(text=f"🔗 {get_size(file.file_size)}≽ {get_name(file.file_name)}", callback_data=f'files#{reqnxt}#{file.file_id}'),]
                    for file in files
               ]
-        
+
+    btn.insert(0,[
+        InlineKeyboardButton("‼️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ Mᴏᴠɪᴇ ‼️", url=f'https://t.me/how_to_download_watch_88')
+        ])
     btn.insert(0, [
             InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ ♻️", callback_data=batch_link),
             InlineKeyboardButton("🥇ʙᴜʏ🥇", url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
@@ -830,11 +836,17 @@ async def auto_filter(client, msg, spoll=False):
     if offset != "":
         if total_results >= 3:
             btn.insert(0,[
+        InlineKeyboardButton("‼️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ Mᴏᴠɪᴇ ‼️", url=f'https://t.me/how_to_download_watch_88')
+        ])
+            btn.insert(0,[
                 InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ", callback_data=batch_link),
                 InlineKeyboardButton("🥇ʙᴜʏ🥇", url=f"https://t.me/{temp.U_NAME}?start=buy_premium"),
                 InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}#0#{req}")
             ])
         else:
+            btn.insert(0,[
+        InlineKeyboardButton("‼️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ Mᴏᴠɪᴇ ‼️", url=f'https://t.me/how_to_download_watch_88')
+        ])
             btn.insert(0,[
                 InlineKeyboardButton("🥇ʙᴜʏ🥇", url=f"https://t.me/{temp.U_NAME}?start=buy_premium"),
                 InlineKeyboardButton("📰 ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}#0#{req}")
@@ -842,10 +854,16 @@ async def auto_filter(client, msg, spoll=False):
     else:
         if total_results >= 3:
             btn.insert(0,[
+        InlineKeyboardButton("‼️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ Mᴏᴠɪᴇ ‼️", url=f'https://t.me/how_to_download_watch_88')
+        ])
+            btn.insert(0,[
                 InlineKeyboardButton("♻️ sᴇɴᴅ ᴀʟʟ", callback_data=batch_link),
                 InlineKeyboardButton("🥇ʙᴜʏ🥇", url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
             ])
         else:
+            btn.insert(0,[
+        InlineKeyboardButton("‼️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ Mᴏᴠɪᴇ ‼️", url=f'https://t.me/how_to_download_watch_88')
+        ])
             btn.insert(0,[
                 InlineKeyboardButton("🥇ʙᴜʏ🥇", url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
             ])
